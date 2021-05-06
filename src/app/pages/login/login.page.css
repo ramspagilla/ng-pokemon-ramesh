@@ -1,0 +1,96 @@
+#container {
+    margin: 0 auto;
+    margin-top: 3rem;
+    height: 5rem;
+    min-width: 18rem;
+}
+
+#container div {
+    margin: 0 auto;
+    width: 80%;
+    min-width: 18rem;
+    max-width: 24rem;
+}
+
+#login-form {
+    display: flex;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+}
+
+#trainer-name-input {
+    min-width: 5rem;
+	font-size: 1.2rem;
+	border: 0.2rem solid #3c5aa6;
+	border-radius: 0.5rem;
+    margin-right: 1rem;
+    padding: 0.5rem 0.5rem;
+    box-sizing: border-box;
+}
+
+#trainer-name-input:focus {
+    outline: 0;
+}
+
+#login-button {
+	background: #f00000;
+	border: 0.2rem solid black;
+	color: #FFCB05;
+	font-size: 1.2rem;
+	border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+#login-button:focus {
+    outline: 0;
+}
+
+#login-button:hover {
+    color: white;
+	background-color: #FFCB05;;
+}
+
+#login-button:active {
+	transform: scale(0.96);
+}
+
+#login-button[disabled] {
+    color: gainsboro;
+    background-color: grey;
+	border: 0.2rem solid rgb(104, 103, 103);
+    opacity: 70%;
+}
+
+#error {
+    box-sizing: border-box;
+    padding-left: 1.3rem;
+}
+
+#error p {
+    font-size: 1rem;
+    margin: 0;
+    color: #f00000;
+    font-weight: bold;
+}
+
+.greetings {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcb05;
+    font-size: 4rem;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #395ea9;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    text-align: center;
+    color: #ffcb05;
+    font-size: 2rem;;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #395ea9;
+    margin-top: .5rem;
+}

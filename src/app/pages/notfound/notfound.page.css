@@ -1,0 +1,20 @@
+h2 {
+    color: #ffcb05;
+    font-size: 4rem;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #395ea9; 
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    border-style: solid;
+    border-color: black;
+    border-radius: .75rem;
+    width: 30%;
+    box-shadow: 3px 5px;
+    background-image: url("https://wallpaperaccess.com/full/1379508.jpg");
+    background-size: cover;
+}

@@ -1,0 +1,43 @@
+#page-title {
+    text-align: center;
+}
+
+#trainer-name {
+    font-size: 2rem;
+    margin: 0;
+    color:  #FFCB05;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #3c5aa6;
+}
+
+#pokedex-title {
+    font-size: 6rem;
+    margin-top: 0;
+    margin-bottom: 0rem;
+    color:  #FFCB05;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #3c5aa6;
+}
+
+.main-div {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(20rem, auto);
+    grid-gap: 1rem;
+    width: 100wv;
+}
+
+.poke-image {
+    object-fit: cover;
+    width: 20rem;
+}
+
+p {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#card {
+    display: grid;
+}
