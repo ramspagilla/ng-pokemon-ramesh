@@ -1,17 +1,14 @@
-<div id="container">
-    <h1>Welcome!</h1>
+<div>
 
-    <h3>Please login to acces the site</h3>
-    <div>
-        <form id="login-form">
-            <input id="trainer-name-input" name="trainer-name" formControlName="trainerName" type="text"
-                placeholder="Enter your trainer name..." required minlength="4" maxlength="20" />
-            <button [disabled]="" type="button" id="login-button" routerLink="">
-                Login
-            </button>
-        </form>
+    <form id="login-form" autocomplete="off">
+        <input id="trainer-name-input" name="trainer-name" formControlName="trainerName" type="text"
+            placeholder="Enter your trainer name..." required minlength="4" maxlength="20" />
+        <button (click)="onLoginClicked()" type="button" id="login-button" routerLink="">
+            Login
+        </button>
+    </form>
 
-        <section class="greetings">
-            <img src="../../../assets/pikacu.png" />
-        </section>
-    </div>
+    <section class="greetings">
+        <img src="../../../assets/pikacu.png" />
+    </section>
+</div>

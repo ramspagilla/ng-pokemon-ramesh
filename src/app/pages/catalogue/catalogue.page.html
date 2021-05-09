@@ -1,1 +1,10 @@
-<h1>Hi from Catalogue 📄 </h1>
+<div class="main-div">
+    <app-pokemon-card id="card" *ngFor="let poke of pokemon" [routerLink]="poke.name">
+        <div class="title">
+            <p>{{poke.name}}</p>
+        </div>
+        <div class="image-div">
+            <img class="poke-image" [src]="poke.imageUrl" [alt]="poke.name" />
+        </div>
+    </app-pokemon-card>
+</div>

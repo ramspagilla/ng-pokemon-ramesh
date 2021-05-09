@@ -1,0 +1,38 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem;
+}
+
+.grid-layout div {
+    text-align: center;
+    border-style: solid;
+    max-height: 65%;
+    min-width: 20rem;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    border-radius: .75rem;
+    background-image: url("../../../assets/pokemon_go___2.gif");
+    background-size:cover;
+}
+
+.grid-layout div:hover {
+    cursor: pointer;
+}
+
+.grid-layout div:focus {
+    outline: none;
+}
+
+.grid-layout div h1 {
+    text-align: center;
+    color: #ffcb05;
+    font-size: 4rem;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #395ea9; 
+}
+
+.grid-layout div img {
+    margin: 0;
+    max-height: 55%;
+}

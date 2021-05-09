@@ -1,4 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { Pokemon } from "src/app/models/pokemon.model";
+import { LocalStorageService } from "src/app/services/local-storage.service";
 
 @Component({
     selector: 'app-trainer',
@@ -6,4 +8,17 @@ import { Component } from "@angular/core";
     styleUrls: ['./trainer.page.css']
 
 })
-export class TrainerPage { }
+export class TrainerPage implements OnInit {
+    constructor(private readonly localStorageService: LocalStorageService) { }
+
+    ngOnInit(): void {
+    }
+
+    get trainerName(): string {
+        return this.localStorageService.getTrainerName();
+    }
+
+    get trainerPokemons(): Pokemon[] {
+        return this.localStorageService.getSelectedPokemons();
+    }
+}

@@ -14,7 +14,7 @@ export class CatalogueComponent implements OnInit {
 
     }
     get pokemon(): Pokemon[] {
-        return this.pokemonService.pokemons
+        return this.pokemonService.pokemon
     }
     ngOnInit(): void {
         this.pokemonService.fetchPokemon()

@@ -1,0 +1,22 @@
+.main-div {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(20rem, auto);
+    grid-gap: 1rem;
+    width: 100wv;
+}
+
+.poke-image {
+    object-fit: cover;
+    width: 10rem;
+}
+
+p {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#card {
+    display: grid;
+}

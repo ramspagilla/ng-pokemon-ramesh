@@ -1,7 +1,14 @@
 <div id="page-title">
-    <p id="trainer-name">Ramesh</p>
+    <p id="trainer-name">{{ trainerName }}</p>
     <p id="pokedex-title">Pokedex</p>
 </div>
 <div class="main-div">
-
+    <app-pokemon-card id="card" *ngFor="let poke of trainerPokemons" [routerLink]="['/catalogue', poke.name]">
+        <div class="title">
+            <p>{{poke.name}}</p>
+        </div>
+        <div class="image-div">
+            <img class="poke-image" [src]="poke.imageUrl" [alt]="poke.name" />
+        </div>
+    </app-pokemon-card>
 </div>
