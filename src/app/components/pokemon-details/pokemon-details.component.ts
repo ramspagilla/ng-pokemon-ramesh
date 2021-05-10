@@ -10,16 +10,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
     styleUrls: ['./pokemon-details.component.css']
 })
 export class PokemonDetailsComponent implements OnInit {
-    /* constructor(private readonly pokemonService: PokemonService) {
- 
-     }
-     get pokemon(): Pokemon[] {
-         return this.pokemonService.pokemon
-     }
-     ngOnInit(): void {
-         this.pokemonService.fetchPokemon()
- 
-     }*/
+
 
     private readonly pokemonName;
 
